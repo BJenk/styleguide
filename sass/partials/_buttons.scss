@@ -1,0 +1,176 @@
+//Menu-Toggle
+#menu-toggle{
+	position: fixed;
+	right: auto;
+	padding-left:6px;
+	padding-top:6px;
+	top: 2.6em;
+	height: 40px;
+	width: 40px;
+	background-color:$gray2;
+	z-index:10;
+}
+
+#menu-icon{
+	-webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+
+#menu-icon:hover{
+	  -webkit-transform: rotate(90deg);
+     -moz-transform: rotate(90deg);
+       -o-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+
+//Buttons
+
+.btn {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 15px 30px;
+	display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.btn-sm {
+	padding: 7px 15px;
+}
+
+.btn-lg {
+	padding: 15px 100px;
+}
+
+.btn-block {
+	width: 100%;
+	float:left;
+	padding: 15px 100px;
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+/*
+Button 1
+*/
+.btn-primary {
+	border: 3px solid $primary;
+	color: $primary;
+}
+
+.btn-primary:hover
+{
+	color: $white;
+	background: $primary;
+}
+
+.btn-primary:active{
+	background-color: $primary-dark;
+
+} 
+
+/*
+Button 2
+*/
+.btn-secondary {
+	border: 3px solid $secondary;
+	color: $secondary;
+}
+
+
+.btn-secondary:hover
+{
+	color: $white;
+	background: $secondary;
+}
+
+.btn-secondary:active{
+	background-color: $secondary-dark;
+
+} 
+
+/*
+Button Error
+*/
+.btn-error {
+	border: 3px solid $error;
+	color: $error;
+}
+
+
+.btn-error:hover
+{
+	color: $white;
+	background: $error;
+}
+
+.btn-error:active{
+	background-color: $error-dark;
+
+}
+
+/*
+Button Alt
+*/
+.btn-alternate {
+	border: 3px solid $accent1;
+	color: $accent1;
+}
+
+
+.btn-alternate:hover
+{
+	color: $white;
+	background: $accent1;
+}
+
+.btn-alternate:active{
+	background-color: $accent1-dark;
+
+} 
+
+input+.btn-submit{
+	margin-left: -10px;
+	background-color: $gray3;
+	padding:8px;
+	-webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+     transition: all 0.2s ease;
+}
+
+input+.btn-submit:hover{
+-webkit-box-shadow: 3px 0px 5px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    3px 0px 5px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         3px 0px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+input+.btn-submit:active{
+	background-color:$gray2;
+}
+
+.forms-stacked>input{
+display:block;
+}

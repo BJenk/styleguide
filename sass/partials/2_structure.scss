@@ -1,0 +1,83 @@
+
+//Container - Main Content 
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+
+
+
+.sm, .med, .lg, .half{
+  display: inline-block;
+  position: relative;
+  padding-top:15px;
+  padding-bottom:15px;
+  float: left; 
+  min-height: 1px;
+  margin-top: 10px;
+}
+
+.sm {width: 33.2%;}
+.half{width:50%;}
+.med {width: 66.5%;}
+.lg {width: 100%;}
+
+@media (max-width: 768px) {
+  .sm, .med, .lg, .half {
+    width: 100%;
+  }
+}
+
+.sm>*, .med>*, .half>*, .lg>*{ 
+  margin: 0px 20px 0px 0px;
+}
+
+@media (max-width: 768px) {
+.sm>*, .med>*, .half>*, .lg>*{ 
+  margin: 0px;
+}}
+
+.unit{
+padding: 20px;
+}
+
+
+
+//BOOTSTRAP JUNK
+
+// .row {
+//   margin-right: -15px;
+//   margin-left: -15px;
+// }
+
+// .row:before,
+// .row:after {
+//   display: table;
+//   content: " ";
+// }
+
+// .row:after {
+//   clear: both;
+// }
+
+
+
+
